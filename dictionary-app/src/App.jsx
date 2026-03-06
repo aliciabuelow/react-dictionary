@@ -1,10 +1,10 @@
-import { useState } from 'react'
 import './App.css'
+import Dictionary from './Dictionary';
 
-function App() {
+export default function App() {
   return (
-    <h1>Dictionary</h1>
+    <div className="container">
+      <Dictionary />
+    </div>
   )
 }
-
-export default App
