@@ -1,9 +1,9 @@
-strong {
+.Meanings strong {
     font-size: 20px;
     font-weight: 500;
 }
 
-em {
+.Meanings em {
     opacity: 0.4;
 }
 

@@ -21,15 +21,18 @@ export default function Dictionary() {
 
     function handleSearchQuery(event) {
         setKeyword(event.target.value);
+        
     }
     return (
-        <div>
+        <div className="Dictionary">
             <header>
                 <h1>Dictionary</h1>
             </header>
             <form className="mt-4" onSubmit={handleSearch}>
-                <input type="search" placeholder="Search a word" onChange={handleSearchQuery} />
-                <input type="submit" value="Search" />
+                <input type="search" id="search-bar" placeholder="What word would you like to look up?" onChange={handleSearchQuery} />
+                <button id="search-button">
+                    <span class="material-symbols-outlined">search</span>
+                </button>
             </form>
             <Results data={results} />
         </div>

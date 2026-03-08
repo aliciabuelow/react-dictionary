@@ -1,13 +1,76 @@
-.word {
-    font-weight: 700;
-    display: inline-block;
-    margin-right: 20px;
+:root {
+    --primary-color: #2C5F4E;
+    --secondary-color: #6FCA89;
 }
 
-.phonetic {
-    display: inline-block;
+body {
+    background-color: #f6f6f6;
+    color: #282828;
+}
+
+.Dictionary h1 {
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--primary-color)
+}
+
+.Dictionary #search-bar {
+    margin: 10px;
+    padding: 10px 15px;
+    width: 400px;
+    border: 2px solid rgba(255,255,255);
+    border-radius: 20px;
+}
+
+.Dictionary #search-button {
+    position: relative;
+    top: 5px;
+    padding: 10px 10px 4px 10px;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    border: none;
+    border-radius: 45px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.Results {
+    display: block;
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.Results .word {
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 37px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.Results .phonetic {
+    color: #fff;
+    opacity: 0.6;
+    line-height: 1;
     font-size: 24px;
-    font-weight: 400;
-    opacity: 0.3;
+    font-weight: 500;
     font-style: italic;
+}
+
+.results-heading {
+    margin: 30px;
+    padding:20px;
+    background-color: #2C5F4E;
+    border-radius: 15px;
+}
+
+.Meanings {
+    margin: 30px;
+    padding: 15px;
+    background: #fff;
+    border: 2px solid rgb(235, 235, 235);
+    border-radius: 15px;
+}
+
+.Meanings {
+    text-align: left;
 }
