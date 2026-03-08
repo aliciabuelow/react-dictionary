@@ -1,25 +1,18 @@
 import "./Meanings.css"
+import Synonyms from "./Synonyms";
+import Example from "./Example";
 
 export default function Meanings(props) {
-    if (props.meaning.example) {
     return (
         <div className="Meanings">
             <strong>{props.meaning.partOfSpeech}</strong>
             <p>
                 {props.meaning.definition}
-                <br />
-                <em>ex. "{props.meaning.example}"</em>
+                <Example example={props.meaning.example} />
+                <em>
+                <Synonyms synonyms={props.meaning.synonyms} />
+                </em>
             </p>
-        </div>
-    ) } else {
-        return (
-            <div className="Meanings">
-            <strong>{props.meaning.partOfSpeech}</strong>
-            <p>
-                {props.meaning.definition}
-                <br />
-            </p>
-        </div>
+            </div>
         )
-    }
 }
