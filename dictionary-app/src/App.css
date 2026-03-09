@@ -1,4 +1,22 @@
+:root {
+    --primary-color: #2C5F4E;
+    --secondary-color: #6FCA89;
+}
+
 .container {
     text-align: center;
     margin: 30px auto;
+}
+
+footer {
+    font-size: 11px;
+}
+
+footer a {
+    color: var(--primary-color);
+    transition: all 100ms ease-in-out;
+}
+
+footer a:hover {
+    color: var(--secondary-color); 
 }
