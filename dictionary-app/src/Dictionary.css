@@ -44,8 +44,12 @@ body {
     max-width: 700px;
 }
 
+.Photos {
+    max-width: 700px;
+}
+
 .Results .word {
-    margin-bottom: 0;
+    margin-bottom: 5px;
     color: #fff;
     font-size: 37px;
     font-weight: 700;
@@ -62,15 +66,15 @@ body {
 }
 
 .results-heading {
-    margin: 30px;
+    margin: 30px auto;
     padding:20px;
     background-color: #2C5F4E;
     border-radius: 15px;
 }
 
-.Meanings {
+.Meanings, .Photos {
     word-wrap: break-word;
-    margin: 30px;
+    margin: 30px auto;
     padding: 15px;
     background: #fff;
     border: 2px solid rgb(235, 235, 235);
