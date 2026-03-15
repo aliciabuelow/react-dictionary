@@ -20,7 +20,7 @@ export default function Dictionary() {
     function handleSearch(event) {
         event.preventDefault();
         if (keyword !== null) {
-        const apiKey = "04dbc8004716437tab5bc0bfo1baf277"
+        const apiKey = import.meta.env.VITE_API_KEY;
         const apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${apiKey}`
         const photosUrl = `https://api.shecodes.io/images/v1/search?query=${keyword}&key=${apiKey}`
         axios.get(apiUrl).then(fetchData);
